@@ -4,7 +4,10 @@ import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
+
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
+import TaskTest.TaskTest.LoginSteps;
 
 public class ReadTestCase {
 
@@ -21,5 +24,9 @@ public class ReadTestCase {
 			System.out.println(steps.get(i).toString());
 			
 		}
+		
+		LoginSteps.loginOnYesPls(DriverClass.driver, "305412312", "123123");
+		
+		
 	}
 }
